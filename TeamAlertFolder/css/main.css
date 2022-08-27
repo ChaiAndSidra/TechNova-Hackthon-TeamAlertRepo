@@ -4,6 +4,9 @@ body {
     color: #000000;
 }
 
+
+/* HOMEPAGE */
+
 .home {
     height: 843px;
     width: 960px;
@@ -13,7 +16,11 @@ body {
 }
 
 #logo-main {
-    align-content: inside;
+    height: 316px;
+    width: 316px;
+    left: 48px;
+    top: 300px;
+    border-radius: 0px;
 }
 
 #tagline {
@@ -26,4 +33,45 @@ body {
     text-align: Center;
     Vertical-align: top;
     letter-spacing: 1px;
+}
+
+.light {
+    padding-top: 5%;
+    font-weight: 400px;
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.75px;
+    text-align: center;
+}
+
+
+/* DROPDOWN */
+
+.semirounded {
+    background-color: #000000;
+    color: white;
+    left: 0px;
+    top: 0px;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+option {
+    background-color: white;
+}
+
+.form-control {
+    background-color: #E0CCAB;
+}
+
+.alert-btn {
+    background-color: #981F26;
+    box-shadow: 0px 20px 24px 0px #1111110F;
 }
