@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+nav {
+    font-family: Poppins;
+    background-color: #96712A;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 3em;
+}
+
+.mobile-menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 1em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 0em 10em 1em 3em!important;
+    display: none;
+    justify-content: center;
+    margin: 0px 10px 20px 3em;
+}
+
+.dropdown li {
+    list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar {
+        display: grid;
+    }
+    .nav-links {
+        width: 60%;
+        display: none;
+    }
+}
