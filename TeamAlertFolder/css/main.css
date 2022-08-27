@@ -55,6 +55,8 @@ body {
     top: 0px;
     border-radius: 16px;
     padding: 16px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
 }
 
 .nowrap {
@@ -67,11 +69,58 @@ option {
     background-color: white;
 }
 
+option:after {
+    content: '';
+    border: 4px solid transparent;
+    border-top: 4px solid white;
+    margin-left: 2px;
+    margin-bottom: 3px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
 .form-control {
     background-color: #E0CCAB;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    height: 64px;
+    width: 408px;
+    left: 96px;
+    top: 0px;
+    padding: 16px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.btn-container {
+    align-content: center;
+    text-align: center;
+    border: 7px solid red;
+    width: 300px;
+    height: 200px;
+    padding-top: 100px;
 }
 
 .alert-btn {
     background-color: #981F26;
     box-shadow: 0px 20px 24px 0px #1111110F;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.75px;
+    text-align: center;
+}
+
+.alert-btn:hover {
+    background-color: #7f1c21;
 }
