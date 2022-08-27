@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body {
+    font-family: Poppins;
+    color: #000000;
+}
+
+.home {
+    margin: 5% 10% 10% 5%;
+    height: 843px;
+    width: 960px;
+    left: 240px;
+    top: 135px;
+    border-radius: 0px;
+}
+
+#logo-main {
+    text-align: inside;
+}
+
+#tagline {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    font-style: bold;
+    line-height: 97%;
+    text-align: Center;
+    Vertical-align: top;
+    letter-spacing: 1px;
+}
