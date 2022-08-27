@@ -51,26 +51,26 @@
         <div class="container form-container">
             <h2>Location</h2>
 
-            <p>SELECT YOUR COUNTRY:</p>
-
             <!-- A drop down menu to help user select their country, this is supposed to be cascading drop down so will use form-->
 
-            <div class="dropDownMenu">
-                <button class="dropDownBtn">Country</button>
-                <div class="dropDownMenuContent ">
-                    <a href="# ">United States of America</a>
-                </div>
+            <form>
+            <label for="country">SELECT YOUR COUNTRY:</label>
+            <select name="countryName" id="countryName" >
+                <option value="default">--</option>
+                <option value="usa">United State of America</option></select>
+            <br>
 
-            </div>
 
-            <!-- A drop down menu to help user select their state-->
-            <div class="dropDownMenu ">
-                <button class="dropDownBtn ">State</button>
-                <div class="dropDownMenuContent ">
-                    <a href="# ">California</a>
-                </div>
+            <br><label for="state">SELECT YOUR STATE:</label>
+            <select name="stateName" id="stateName" >
+                <option value="default state">--</option>
+                <option value="ca">California</option></select>
+            <br>
 
-            </div>
+            <br><input type="submit">
+
+        </form>
+
         </div>
     </div>
 </body>
