@@ -6,15 +6,15 @@ body {
 
 .home {
     margin: 5% 10% 10% 5%;
-    height: 843.395751953125px;
+    height: 843px;
     width: 960px;
     left: 240px;
-    top: 135.00009155273438px;
+    top: 135px;
     border-radius: 0px;
 }
 
 #logo-main {
-    align: inside
+    text-align: inside;
 }
 
 #tagline {
@@ -24,7 +24,7 @@ body {
     text-align: center;
     font-style: bold;
     line-height: 97%;
-    align: Center;
+    text-align: Center;
     Vertical-align: top;
     letter-spacing: 1px;
 }
