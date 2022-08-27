@@ -5,7 +5,6 @@ body {
 }
 
 .home {
-    margin: 5% 10% 10% 5%;
     height: 843px;
     width: 960px;
     left: 240px;
@@ -14,7 +13,7 @@ body {
 }
 
 #logo-main {
-    text-align: inside;
+    align-content: inside;
 }
 
 #tagline {
