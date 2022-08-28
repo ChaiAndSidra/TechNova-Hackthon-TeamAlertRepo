@@ -131,6 +131,10 @@
         width: 504px;
         height: 72px;
     }
+    
+    .alert-btn:hover {
+        background-color: #7f1c21;
+    }
     /* LOCATION PAGE */
     
     .location-container {
