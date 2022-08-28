@@ -114,21 +114,24 @@ option:after {
     margin-top: 30px;
 }
 
-.alert-btn {
+.btn-primary {
     background-color: #981F26;
     box-shadow: 0px 20px 24px 0px #1111110F;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 38px;
-    letter-spacing: 0.75px;
     text-align: center;
     border-radius: 16px;
-    width: 504px;
-    height: 72px;
+    line-height: 38px;
+    letter-spacing: 0.75px;
 }
 
-.alert-btn:hover {
+.red-btn:hover {
     background-color: #7f1c21;
+}
+
+.alert-btn {
+    font-size: 24px;
+    font-weight: 600;
+    width: 504px;
+    height: 72px;
 }
 
 
