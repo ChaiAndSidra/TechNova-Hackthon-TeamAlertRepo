@@ -8,10 +8,7 @@ Date: 8/26/2022
 Filename: CA.html
 */
 
-map{
-
-    height:300px;
-    width: 100%;
-
+#map{
+ height: 180px; 
 
 }
