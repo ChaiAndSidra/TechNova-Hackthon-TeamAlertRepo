@@ -176,6 +176,7 @@
         left: 95vw;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        z-index: 1!important;
     }
     
     .closebtn {

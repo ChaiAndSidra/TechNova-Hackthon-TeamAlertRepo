@@ -11,10 +11,5 @@ Filename: map.css
 #map {
     height: 85vh;
     width: 100%;
-    /* z-index: -1; */
-}
-
-.map-container {
-    /* height: 100%; */
-    z-index: -1;
+    z-index: 0;
 }
