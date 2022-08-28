@@ -12,70 +12,84 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0" />
 
-    <title>Team Alert CA Page</title>
-   
+    <title> A!ERT | CA </title>
+
     <!-- leaflet location service to get a map-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-    crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
 
- 
-  <!-- Favicon-->
-  <link rel="icon" type="image/ico" type="image/ico" href="./TeamAlertFolder/img/favicon.ico" />
 
-  <!-- <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'> -->
+    <!-- Favicon-->
+    <link rel="icon" type="image/ico" type="image/ico" href="./TeamAlertFolder/img/favicon.ico" />
 
-  <!-- CSS Libraries -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/nav.css">
-  <link rel="stylesheet"href="./css/map.css">
-
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/map.css">
 </head>
 
 <!--js script for leaflet-->
 <!-- Make sure you put this AFTER Leaflet's CSS -->
-<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-crossorigin=""></script>
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
+
+<body class="background">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg">
+        <ul class="nav-ul navbar-nav">
+            <li class="nav-item">
+                <div>
+                    <a href="./AlertHomePage.html" class="nav-logo">
+                        <img id="logo" src="./img/LOGO_SMALL.png">
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"> SET NEW LOCATION</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./CA.html">YOUR LOCATIONS</a>
+            </li>
+            <li class="nav-item" />
+            <a class="nav-link" href="./ContactUs.html">CONTACT US</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container main location">
+        <div class="disaster-container">
+            <h2>California, USA</h2>
+
+            <h3>DISASTER TYPE: </h3>
+
+            <!-- HTML form to check what the user wants to display-->
+            <form>
+                <input type="checkbox" id="heatAlert" name="heatAlert" value="Heatwave">
+                <label for="heatAlert">Heatwave</label><br>
+
+                <input type="checkbox" id="wildfireAlert" name="wildfireAlert" value="Wildfire">
+                <label for="wildfireAlert">Wildfire</label><br>
+
+                <input type="checkbox" id="earthquakeAlert" name="earthquakeAlert" value="Earthquake">
+                <label for="earthquakeAlert">Earthquake</label><br>
+
+                <input type="checkbox" id="floodAlert" name="floodAlert" value="Flood/tsunami">
+                <label for="floodAlert">Flood/tsunami</label><br>
+
+                <input type="checkbox" id="crimeAlert" name="crimeAlert" value="Localcrime">
+                <label for="crimeAlert">Local Crime</label><br>
+            </form>
+        </div>
+
+        <!-- Super imposed map -->
+        <!-- div tag that will eventually use the API-->
+        <div id="map">
+
+        </div>
 
 
 
-<body class="homepage background">
-    <h1>A!ERT</h1>
-
-    <h2>California, USA</h2>
-
-    <h3>Click the check mark to see information</h3>
-
-    <!-- HTML form to check what the user wants to display-->
-    <form>
-        <input type="checkbox" id="heatAlert" name="heatAlert" value="Heatwave">
-        <label for="heatAlert">Heatwave</label><br>
-
-        <input type="checkbox" id="wildfireAlert" name="wildfireAlert" value="Wildfire">
-        <label for="wildfireAlert">Wildfire</label><br>
-
-        <input type="checkbox" id="earthquakeAlert" name="earthquakeAlert" value="Earthquake">
-        <label for="earthquakeAlert">Earthquake</label><br>
-
-        <input type="checkbox" id="floodAlert" name="floodAlert" value="Flood/tsunami">
-        <label for="floodAlert">Flood/tsunami</label><br>
-
-        <input type="checkbox" id="crimeAlert" name="crimeAlert" value="Localcrime">
-        <label for="crimeAlert">Local Crime</label><br>
-    </form>
-
-
-    <!-- Super imposed map -->
-    <h3>Map of California</h3>
-
-    <!-- div tag that will eventually use the API-->
-    <div id="map"></div>
-
-
-
+    </div>
 </body>
 
 
