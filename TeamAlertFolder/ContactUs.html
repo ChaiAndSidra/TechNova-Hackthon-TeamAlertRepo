@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--
         Technova Hackathon 2022
@@ -9,54 +10,75 @@
         Filename: CA.html
     -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
 
-    <title>Contact Us Page</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/ico" type="image/ico" href="./TeamAlertFolder/img/favicon.ico" />
 
-     <!-- CSS Libraries -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     <link rel="stylesheet" href="./css/main.css">
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/map.css">
+
+    <title> A!ERT | Contact Us </title>
 </head>
 
-    <body class="homepage background">
-        <h1>A!ERT</h1>
-     
+<body class="background">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg">
+        <ul class="nav-ul navbar-nav">
+            <li class="nav-item">
+                <div>
+                    <a href="./AlertHomePage.html" class="nav-logo">
+                        <img id="logo" src="./img/LOGO_SMALL.png">
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./AlertHomePage.html"> SET NEW LOCATION</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./CA.html">YOUR LOCATIONS</a>
+            </li>
+            <li class="nav-item active">
+                <a class=" nav-link " href="./ContactUs.html ">CONTACT US</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container main contact-us">
+
         <!-- this will be a form -->
-
-        
-
-
 
         <h2>Contact Us</h2>
         <p>To contact A!ERT for any updates, news, or, general inquiries please provide our team with the following information:</p>
-        
-            <!-- HTML form for the person to add information-->
-            <form>
-                <label for="firstName">First Name: </label><br>
-                <input type="text" id="firstName" name="firstName" value=""><br>
-               
-               <br><label for="lastName">Last Name: </label><br>
-                <input type="text" id="lastName" name="lasttName" value=""><br>
 
-                <br><label for="telNumber">Telephone Number: </label><br>
-                <input type="tel" id="telNumber" name="telNumber" value=""><br>
-                
-                <br><label for="userEmail">Email Address: </label><br>
-                <input type="email" id="userEmail" name="userEmail" value=""><br>
-                <br>
+        <!-- HTML form for the person to add information-->
+        <form>
+            <label for="firstName ">First Name: </label><br>
+            <input type="text " id="firstName " name="firstName " value=" "><br>
 
-               <input type="submit">
-            </form>
-   
+            <br><label for="lastName ">Last Name: </label><br>
+            <input type="text " id="lastName " name="lasttName " value=" "><br>
 
-        
+            <br><label for="telNumber ">Telephone Number: </label><br>
+            <input type="tel " id="telNumber " name="telNumber " value=" "><br>
+
+            <br><label for="userEmail ">Email Address: </label><br>
+            <input type="email " id="userEmail " name="userEmail " value=" "><br>
+            <br>
+
+            <input type="submit ">
+        </form>
+
+
+
         <p><strong>In the case of an emergeny please contact your local authorities. A!ERT has a wide variety of resources to help you reach out for help.</strong></p>
-  
-    </body>
+    </div>
+</body>
 
-    <!-- footer will contain information about the A!ERT page-->
-    <footer
-    ></footer>
-    
+<!-- footer will contain information about the A!ERT page-->
+<footer></footer>
+
 </html>
-

@@ -39,7 +39,7 @@
                 </div>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#"> SET NEW LOCATION</a>
+                <a class="nav-link" href="./AlertHomePage.html"> SET NEW LOCATION</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./CA.html">YOUR LOCATIONS</a>
@@ -57,12 +57,15 @@
         <h1 id="tagline">Track Natural Disasters And Local Crimes In Your Area. </h1>
 
         <div class="container form-container">
+
             <p class="light">SELECT YOUR COUNTRY:</p>
+            <div class="container">
+                <p class="semirounded nowrap" id="flag">--</p>
 
-            <!-- A drop down menu to help user select their country, this is supposed to be cascading drop down so will use form-->
+                <!-- A drop down menu to help user select their country, this is supposed to be cascading drop down so will use form-->
 
-            <div class="dropdown dropDownMenu">
-                <p class="semirounded nowrap" id="flag">--
+                <div class="dropdown dropDownMenu">
+
                     <div class="dropDownMenuContent">
                         <!-- DROPDOWN with COUNTRIES -->
                         <select id="country" name="country" class="form-control">
@@ -313,18 +316,18 @@
                         <option value="Zimbabwe">Zimbabwe</option>
                     </select>
                     </div>
-                </p>
 
+                </div>
             </div>
 
+
             <p class="light">SELECT YOUR STATE:</p>
-            <div class="semirounded nowrap" id="state">--</div>
-
-            <!-- A drop down menu to help user select their state-->
-            <div class="dropdown dropDownMenu">
-
-                <div class="dropDownMenuContent">
-                    <select name="state" id="select-state" class="form-control">
+            <div class="container">
+                <div class="semirounded nowrap" id="state">--</div>
+                <!-- A drop down menu to help user select their state-->
+                <div class="dropdown dropDownMenu">
+                    <div class="dropDownMenuContent">
+                        <select name="state" id="select-state" class="form-control">
                         <option value="--">--</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -378,9 +381,10 @@
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
                     </select>
-                    </i>
-                </div>
+                        </i>
+                    </div>
 
+                </div>
             </div>
         </div>
         <div class="btn-div">
