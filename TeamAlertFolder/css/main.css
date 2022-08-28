@@ -7,6 +7,11 @@ body {
 
 /* HOMEPAGE */
 
+.background {
+
+    background-image: url('../img/bg-img.png');
+}
+
 .home {
     height: 843px;
     width: 960px;
