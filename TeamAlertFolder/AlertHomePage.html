@@ -64,8 +64,8 @@
             <!-- A drop down menu to help user select their country, this is supposed to be cascading drop down so will use form-->
 
             <div class="dropdown dropDownMenu">
-                <p class="semirounded nowrap">FLAG
-                    <div class="dropDownMenuContent ">
+                <p class="semirounded nowrap" id="flag">--
+                    <div class="dropDownMenuContent">
                         <!-- DROPDOWN with COUNTRIES -->
                         <select id="country" name="country" class="form-control">
                             <option value="--">--</option>
@@ -320,13 +320,13 @@
             </div>
 
             <p class="light">SELECT YOUR STATE:</p>
-            <p class="semirounded nowrap" id="state">State</p>
+            <p class="semirounded nowrap" id="state">--</p>
 
             <!-- A drop down menu to help user select their state-->
             <div class="dropdown dropDownMenu">
 
                 <div class="dropDownMenuContent">
-                    <select>
+                    <select name="state" id="select-state" class="form-control">
                         <option value="--">--</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -406,6 +406,7 @@
         onChange();
 
         s.onchange = onChange;
+        onChange();
     </script>
 </body>
 
