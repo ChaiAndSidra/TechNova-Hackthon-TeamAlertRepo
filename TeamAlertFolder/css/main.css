@@ -26,24 +26,23 @@ body {
     height: 30%;
     width: 30%;
     left: 48px;
-    top: 300px;
     border-radius: 0px;
 }
 
 #tagline {
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 45px;
     font-weight: 700;
     text-align: center;
     font-style: bold;
     line-height: 97%;
-    text-align: Center;
+    text-align: center;
     Vertical-align: top;
     letter-spacing: 1px;
 }
 
 .light {
-    padding-top: 2%;
+    padding-top: 3%;
     font-weight: 400px;
     font-size: 18px;
     line-height: 30px;
@@ -55,8 +54,10 @@ body {
 /* DROPDOWN */
 
 .flex-container {
-    display: flex;
-    padding: 0% 10% 0% 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 504px;
+    max-height: 72px;
 }
 
 .semirounded {
@@ -64,13 +65,11 @@ body {
     color: white;
     text-align: center;
     border-radius: 16px 0px 0px 16px;
-    flex: 1;
 }
 
 option {
     background-color: white;
     text-align: center;
-    flex: 1;
 }
 
 option:after {
@@ -101,23 +100,18 @@ option:after {
     flex-grow: 1;
 }
 
-.btn-container {
-    align-content: center;
-    text-align: center;
-    border: 7px solid red;
-    width: 300px;
-    height: 200px;
-    padding-top: 100px;
-    padding-top: 5%;
-    font-weight: 400px;
-    font-size: 18px;
-    line-height: 34px;
-    letter-spacing: 0.75px;
-    text-align: center;
-}
-
 .no-underline {
     text-decoration: none;
+}
+
+.btn-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    height: 72px;
+    margin-top: 30px;
 }
 
 .alert-btn {
@@ -128,15 +122,9 @@ option:after {
     line-height: 38px;
     letter-spacing: 0.75px;
     text-align: center;
-    margin-top: 30px;
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-    height: 72px;
     border-radius: 16px;
+    width: 504px;
+    height: 72px;
 }
 
 .alert-btn:hover {
