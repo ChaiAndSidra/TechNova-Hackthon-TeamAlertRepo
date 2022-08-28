@@ -1,6 +1,6 @@
 /*map related stuff goes here */
 
-var map = L.map('map').setView([51.505, -0.09], 5);
+var map = L.map('map').setView([51.505, -0.09], 10);
 
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -11,7 +11,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var marker = L.marker([51.5, -0.09]).addTo(map);
 
 
-marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+marker.bindPopup("<b>Hello world!</b><br> Alert!").openPopup();
 
 var popup = L.popup()
     .setLatLng([51.513, -0.09])

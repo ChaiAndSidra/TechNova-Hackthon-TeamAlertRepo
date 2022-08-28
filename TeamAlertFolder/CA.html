@@ -20,9 +20,11 @@
 
     <!-- Favicon-->
     <link rel="icon" type="image/ico" type="image/ico" href="./TeamAlertFolder/img/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <!-- CSS Libraries -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/map.css">
@@ -53,11 +55,13 @@
             <li class="nav-item">
                 <a class="nav-link" href="./ContactUs.html">CONTACT US</a>
             </li>
+
         </ul>
     </nav>
-
-    <div class="container main location">
-        <div class="disaster-container">
+    <div class="location-container">
+        <button id="open-btn" onclick="openNav()"> < </button>
+        <div id="sidenav" class="disaster-container">
+            <button class="closebtn" onclick="closeNav()">&times;</button>
             <h2>California, USA</h2>
 
             <h3>DISASTER TYPE: </h3>
@@ -66,22 +70,40 @@
             <form>
 
                 <input type="checkbox" id="wildfireAlert" name="wildfireAlert" value="Wildfire">
-                <label for="wildfireAlert">Wildfire</label><br>
+                <label for="wildfireAlert">Wildfire</label>
+                <i class="bi bi-exclamation-triangle-fill">
+                <span class="tooltiptext"><img src="./img/wildfire-INFO-BOX.png"></span>
+            </i><br>
 
                 <input type="checkbox" id="earthquakeAlert" name="earthquakeAlert" value="Earthquake">
-                <label for="earthquakeAlert">Earthquake</label><br>
+                <label for="earthquakeAlert">Earthquake</label>
+                <i class="bi bi-exclamation-triangle-fill">
+                    <span class="tooltiptext"><img src="./img/LOGO_SMALL.png"></span>
+                </i><br><br>
 
                 <input type="checkbox" id="floodAlert" name="floodAlert" value="Flood">
-                <label for="floodAlert">Flood</label><br>
+                <label for="floodAlert">Flood</label>
+                <i class="bi bi-exclamation-triangle-fill">
+                    <span class="tooltiptext"><img src="./img/LOGO_SMALL.png"></span>
+                </i><br><br>
 
                 <input type="checkbox" id="tsunamiAlert" name="tsunamiAlert" value="Tsunami">
-                <label for="tsunamiAlert">Tsunami</label><br>
+                <label for="tsunamiAlert">Tsunami</label>
+                <i class="bi bi-exclamation-triangle-fill">
+                    <span class="tooltiptext"><img src="./img/LOGO_SMALL.png"></span>
+                </i><br><br>
 
                 <input type="checkbox" id="crimeAlert" name="crimeAlert" value="Localcrime">
-                <label for="crimeAlert">Local Crime</label><br>
-
+                <label for="crimeAlert">Local Crime</label>
+                <i class="bi bi-exclamation-triangle-fill">
+                    <span class="tooltiptext"><img src="./img/LOGO_SMALL.png"></span>
+                </i><br>
+                <br>
                 <input type="checkbox" id="landslideAlert" name="landslideAlert" value="Landslide">
-                <label for="landslideAlert">Landslide</label><br>
+                <label for="landslideAlert">Landslide</label>
+                <i class="bi bi-exclamation-triangle-fill">
+                    <span class="tooltiptext"><img src="./img/LOGO_SMALL.png"></span>
+                </i><br><br>
                 <div class="btn-div">
                     <a href="CA.html" class="no-underline">
                         <button class="red-btn btn btn-primary"> Save location</button>
@@ -90,15 +112,22 @@
             </form>
         </div>
 
-        <!-- Super imposed map -->
-        <!-- div tag that will eventually use the API-->
-        <div id="map">
+        <div class="map-container" id="map">
 
         </div>
 
-
-
     </div>
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("sidenav").style.display = "flex";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("sidenav").style.display = "none";
+        }
+    </script>
 </body>
 
 

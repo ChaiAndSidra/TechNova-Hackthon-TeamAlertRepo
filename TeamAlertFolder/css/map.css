@@ -5,10 +5,16 @@ Technova Hackathon 2022
 
 Authors/Collaborators: Sidra Naru, Rehannah Baptiste, Aileen Lao
 Date: 8/26/2022 
-Filename: CA.html
+Filename: map.css
 */
 
-#map{
- height: 600px; 
-width: 100%;
+#map {
+    height: 85vh;
+    width: 100%;
+    /* z-index: -1; */
+}
+
+.map-container {
+    /* height: 100%; */
+    z-index: -1;
 }

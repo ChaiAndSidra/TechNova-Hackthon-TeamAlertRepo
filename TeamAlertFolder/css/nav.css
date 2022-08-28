@@ -8,6 +8,7 @@
     padding: 16px, 236px, 16px, 236px;
     border-radius: 0px;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .nav-ul {
