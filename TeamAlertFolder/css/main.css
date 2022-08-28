@@ -23,8 +23,8 @@ body {
 }
 
 #logo-main {
-    height: 316px;
-    width: 316px;
+    height: 30%;
+    width: 30%;
     left: 48px;
     top: 300px;
     border-radius: 0px;
@@ -124,6 +124,10 @@ option:after {
     text-align: center;
 }
 
+.no-underline {
+    text-decoration: none;
+}
+
 .alert-btn {
     background-color: #981F26;
     box-shadow: 0px 20px 24px 0px #1111110F;
@@ -133,6 +137,14 @@ option:after {
     letter-spacing: 0.75px;
     text-align: center;
     margin-top: 30px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    height: 72px;
+    border-radius: 16px;
 }
 
 .alert-btn:hover {
