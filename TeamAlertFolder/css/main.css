@@ -117,10 +117,12 @@
         border-radius: 16px;
         line-height: 38px;
         letter-spacing: 0.75px;
+        border: 2px solid black;
     }
     
     .red-btn:hover {
         background-color: #7f1c21;
+        border: 2px solid black;
     }
     
     .alert-btn {
@@ -146,7 +148,7 @@
     .disaster-container {
         color: white;
         background-color: black;
-        padding: 10% 5% 0% 5%;
+        padding: 6% 5% 0% 5%;
         flex-direction: column;
         gap: 16px;
         bottom: 0%;
@@ -180,13 +182,10 @@
         margin-left: 50px;
     }
     
-    .exclamation-triangle-fill {
-        background-color: yellow!important;
+    .bi-exclamation-triangle-fill {
         border: 1px sold black;
-        height: 20%;
-        width: 20%;
-        margin-left: 30px;
-        color: yellow!important;
+        font-size: 28px;
+        color: #FFD42A;
     }
     /* Tooltip container */
     
@@ -194,7 +193,7 @@
         position: relative;
         display: inline-block;
         border-bottom: 1px dotted black;
-        /* If you want dots under the hoverable text */
+        padding-bottom: 10%;
     }
     /* Tooltip text */
     
@@ -218,52 +217,57 @@
     }
     /* Contact us */
     
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        gap: 12px;
+        position: absolute;
+        width: 960px;
+        height: 852px;
+        top: 100px;
+    }
+    
     .contact-us h2 {
         width: 960px;
         height: 66px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
+        font-style: bold;
+        font-weight: 700px;
         font-size: 48px;
         line-height: 70px;
         text-align: center;
         letter-spacing: 1px;
         text-transform: capitalize;
         color: #000000;
-        padding-bottom: 10%;
     }
     
     .contact-us .ln-1 {
-        width: 960px;
-        height: 66px;
-        /* Desktop / Display Small */
-        font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
-        font-size: 32px;
+        font-size: 26px;
         line-height: 34px;
-        /* or 106% */
         display: flex;
         align-items: center;
         text-align: center;
         letter-spacing: 1px;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
+        width: 70%;
     }
     
     .ln-2 {
         line-height: 34px;
-        /* or 106% */
         display: flex;
         align-items: center;
         text-align: center;
         letter-spacing: 1px;
-        color: #000000;
-        /* Inside auto layout */
-        flex: none;
-        order: 2;
-        flex-grow: 0;
+        font-weight: 200px!important;
+        font-size: 20px;
+    }
+    
+    .contact-us h3 {
+        padding: 0px;
     }
     
     .contact-container {
@@ -289,16 +293,10 @@
     }
     
     .bold {
-        font-style: normal;
-        font-weight: 700;
+        font-style: bold;
+        font-weight: 700px;
         font-size: 32px;
         line-height: 34px;
-        /* or 106% */
-        display: flex;
-        align-items: center;
-        text-align: center;
         letter-spacing: 1px;
         text-transform: capitalize;
-        color: #000000;
-        text-align: center;
     }
