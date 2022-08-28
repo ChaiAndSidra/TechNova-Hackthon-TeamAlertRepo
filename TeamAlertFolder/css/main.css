@@ -121,6 +121,7 @@
         line-height: 38px;
         letter-spacing: 0.75px;
         border: 2px solid black;
+        width: 100%;
     }
     
     .red-btn:hover {
@@ -276,7 +277,7 @@
         text-align: center;
         letter-spacing: 1px;
         font-weight: 200px!important;
-        font-size: 20px;
+        font-size: 25px;
     }
     
     .contact-us h3 {
@@ -298,6 +299,8 @@
         align-items: center;
         letter-spacing: 0.75px;
         margin-bottom: 10px;
+        padding: 5px 15px 5px 15px;
+        width: 100%;
     }
     
     .bold {
